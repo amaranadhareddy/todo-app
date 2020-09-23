@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainBody">
+      <div class="tile">
+        <h1 class="heading">Task List</h1>
+        <form class="task-form">
+          <input
+            type="text"
+            name="task"
+            class="task"
+            placeholder="New Task"
+          /><br />
+          <input type="submit" value="ADD TASK" class="button add" />
+        </form>
+      </div>
+      <hr />
+      <div class="tile">
+        <h2 class="heading">Tasks</h2>
+        <input
+          type="text"
+          name="filter"
+          id="filter"
+          class="filter"
+          placeholder="Filter Tasks"
+          autocomplete="off"
+        />
+        <ul class="itemList"></ul>
+        <p class="default-task">No Task Available</p>
+        <button class="button clear">CLEAR TASKS</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
